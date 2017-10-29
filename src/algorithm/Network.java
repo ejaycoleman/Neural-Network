@@ -25,6 +25,38 @@ public class Network {
 	    	return m
 	    	    		
 	}*/
+	
+	private void random() {
+		
+	}
+	
+	private void sigmoid() {
+		
+	}
+	
+	private void dySigmoid() {
+		
+	}
+	
+	private void update() {
+		
+	}
+	
+	private void backPropagate() {
+		
+	}
+	
+	private void test() {
+		
+	}
+	
+	private void weights() {
+		
+	}
+	
+	private void train() {
+		
+	}
 
 	public Network(int ni, int nh, int no) {
 		// number of input, hidden and output nodes
@@ -71,4 +103,6 @@ public class Network {
 		*/
 		
 	}
+	
+	
 }
