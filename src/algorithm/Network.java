@@ -19,16 +19,18 @@ public class Network {
 	
 	Random rnd = new Random();
 	
-	/*private void makeMatrix(int I, int J, int fill) {
-	    Double [] m;
+	private Double[] makeMatrix(int I, int J, int fill) {
+
+	    Double[] m = new Double[0];
+	    
 	    
 	    for (int i=0; i < I; i++) {
-	    	    m.add([fill]*J);
+	    	    //m.add([fill]*J);
 	    	}
 	    	
-	    	return m
+	    	return m;
 	    	    		
-	}*/
+	}
 	
 	private double random(double a, double b) {
 		return (b-a)*rnd.nextDouble() + a;
