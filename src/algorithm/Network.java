@@ -30,12 +30,12 @@ public class Network {
 		
 	}
 	
-	private void sigmoid() {
-		
+	private double sigmoid(double x) {
+		return Math.tanh(x);
 	}
 	
-	private void dySigmoid() {
-		
+	private double dySigmoid(double y) {
+		return 1.0 - Math.pow(y, 2); 
 	}
 	
 	private void update() {
