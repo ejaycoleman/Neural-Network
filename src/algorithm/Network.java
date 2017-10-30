@@ -1,5 +1,7 @@
 package algorithm;
 
+import java.util.Random;
+
 public class Network {
 	private int ni;
 	private int nh;
@@ -15,6 +17,8 @@ public class Network {
 	private int ci;
 	private int co;
 	
+	Random rnd = new Random();
+	
 	/*private void makeMatrix(int I, int J, int fill) {
 	    Double [] m;
 	    
@@ -26,8 +30,8 @@ public class Network {
 	    	    		
 	}*/
 	
-	private void random() {
-		
+	private double random(double a, double b) {
+		return (b-a)*rnd.nextDouble() + a;
 	}
 	
 	private double sigmoid(double x) {
@@ -59,6 +63,10 @@ public class Network {
 	}
 
 	public Network(int ni, int nh, int no) {
+		
+		rnd.setSeed(0);
+		
+		
 		// number of input, hidden and output nodes
 		this.ni = ni + 1;
 		this.nh = nh;
